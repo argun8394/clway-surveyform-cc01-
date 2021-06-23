@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div id="container" margin: auto; margin-top: 30px; background-color: rgba(0, 0, 0, 0.3);>
+        <header>
+
+            <h1>Clarusway Survey Form</h1>
+
+            <h6>Than you for taking the time to help us improve the platform</h6>
+
+        </header>
+
+
+        <form action="result.html" method="GET">
+            <div>
+                <label for="name">Name</label><br>
+                <input type="text" placeholder="Enter your name" id="name" name="name">
+            </div>
+            <br>
+            <div>
+                <label for="surname">Surname</label> <br>
+                <input type="text" id="surname" name="surname" placeholder="Enter your Surname">
+            </div>
+            <br>
+            <div>
+                <label for="email">Email</label><br>
+                <input type="email" name="email" id="email" placeholder="user@clarusway.com">
+            </div>
+
+            <br>
+            <div>
+
+
+                <label for="">Which option best describes your current role?</label>
+                <br>
+
+                <select name="current-role" id="role">
+                    <option >your current role</option>
+                    <option value="director" /*selected*/>director</option>
+                    <option value="mentor">mentor</option>
+                    <option value="teacher">teacher</option>
+                    <option value="student">student</option>
+                </select>
+                <br><br>
+
+                <div>
+                    <label for="">Would you recommend Clarusway to friend</label><br>
+                    <input type="radio" name="rommend1" id="dyes">
+                    <label for="dyes">Definitely, Yes</label><br>
+                    <input type="radio" name="recommend2" id="maybe">
+                    <label for="maybe">Maybe</label><br>
+                    <input type="radio" name="recommend3" id="nsure">
+                    <label for="nsure">Not sure</label><br>
+                    <input type="radio" name="recommend4" id="Dno">
+                    <label for="Dno">Definitely, No</label>
+
+                </div>
+                <br>
+                <br>
+                <div>
+                    <label for="">What is your favorite feature of Clarusway</label><br>
+                    <select name="feature" id="ff">
+                        <option >Select an option</option>
+                        <option value="education">education</option>
+                        <option value="instructors">instructors</option>
+                        <option value="sincerity">sincerity</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+
+                    <label for="">What would you like to see improved? (Check all that apply)</label><br>
+                    <label>
+                        <input type="checkbox" >
+                        Front-end Projects<span class="checkmark"></span>
+                      </label><br>
+                    <label>
+                        <input type="checkbox" >
+                        Back-end Projects<span class="checkmark"></span>
+                      </label><br>
+                    <label>
+                        <input type="checkbox" >
+                        Data Science<span class="checkmark"></span>
+                      </label><br>
+                    <label class="container">
+                        <input type="checkbox" >
+                        Additional Courses<span class="checkmark"></span>
+                      </label>
+
+                </div>
+                <br>
+                <div>
+                    <label for="">Any comments or suggestions</label><br>
+                    <textarea name="comment" id="comm" style="resize: none;"></textarea>
+
+                </div>
+
+            </div>
+
+            <br>
+            <input type="submit" value="submit">
+
+        </form>
+    </div>
+
+
+</body>
+
+</html>

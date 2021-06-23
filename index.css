@@ -1,0 +1,7 @@
+#container {
+    border-style: solid;
+    max-width: 80%;
+    margin: left;
+    padding: 2px;
+    background-color: aquamarine;
+}
